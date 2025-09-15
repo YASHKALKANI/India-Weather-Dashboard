@@ -75,14 +75,14 @@ def fetch_state_weather(state_city_coords):
 def main():
     st.set_page_config(page_title="India Weather Dashboard", layout="wide")
     st.title("Live Weather Dashboard — States & Cities of India")
-    st.caption("Real-time weather updates using WeatherAPI.com")
+    # st.caption("Real-time weather updates using WeatherAPI.com")
 
     # Load state-city coordinates
     with open(STATE_CITY_COORD_FILE) as f:
         STATE_CITIES = json.load(f)
 
     unit = st.sidebar.radio("Temperature Unit", ["Celsius (°C)", "Fahrenheit (°F)"])
-    auto_refresh = st.sidebar.checkbox("Auto-refresh every 10 minutes", value=False)
+    auto_refresh = st.sidebar.checkbox("Auto-refresh every 1 minutes", value=False)
 
     st.sidebar.header("City Weather Options")
     state_name = st.sidebar.selectbox("Select State", list(STATE_CITIES.keys()))
