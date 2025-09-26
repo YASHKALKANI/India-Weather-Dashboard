@@ -6,7 +6,7 @@ import json
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-API_KEY = "6ea1df8523514452a5671306250808"  # Replace with your WeatherAPI.com key
+API_KEY = "9838a61887684a27a49104224252509"  # Replace with your WeatherAPI.com key
 STATE_CITY_COORD_FILE = "india_state_cities.json"  # Merged JSON file
 
 
